@@ -17,7 +17,7 @@ section {
 }
 
 header {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -25,6 +25,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 9999;
+    background: white;
+    border-radius: 130px 0px;
 }
 
 header .logo {
@@ -47,6 +50,10 @@ header ul li a {
     font-weight: 400;
     margin-left: 40px;
     text-decoration: none;
+}
+
+header ul li a:hover {
+    color: #017143;
 }
 
 .content {
@@ -149,6 +156,11 @@ header ul li a {
     filter: invert(1);
 }
 
+.social-icon:hover{
+    transform: translateY(-10px);
+    transition: .3s;
+}
+
 .circle {
     position: absolute;
     top: 0;
@@ -157,4 +169,100 @@ header ul li a {
     height: 100%;
     background: #017143;
     clip-path: circle(600px at right 800px);
+}
+
+/* Menu CSS */
+
+.menu-area {
+    background: #f8f8f8;
+    background-image: url("https://images.unsplash.com/photo-1513530176992-0cf39c4cbed4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.single-menu {
+    background-color: #fff;
+    box-shadow: 0px 10px 30px 0px rgba(182, 136, 52, 0.2);
+    border-radius: 10px;
+    padding: 30px 30px;
+    margin-bottom: 30px;
+}
+
+.single-menu:hover {
+    background-color: #017143;
+    color: #fff;
+    box-shadow: 0px 10px 30px 0px rgba(182, 136, 52, 0.2);
+    border-radius: 10px;
+    padding: 30px 30px;
+    margin-bottom: 30px;
+}
+
+.single-menu .title-div {
+    padding-bottom: 20px;
+}
+
+.single-menu .price {
+    color: #b68834;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+
+.single-menu p {
+    margin-bottom: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* About CSS */
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    word-wrap: wrap;
+    scroll-behavior: smooth;
+    background-size: 100%;
+}
+
+.backimg {
+    background-image: url(https://images.hdqwalls.com/wallpapers/starbucks-glass.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.8;
+}
+
+.about-p {
+    text-align: center;
+    text-transform: capitalize;
+    overflow: scroll;
+    scrollbar-color: red;
+    overflow: hidden;
+    z-index: -1;
+    position: relative;
+    top: 350px;
+    opacity: 1;
+    overflow: hidden;
+    color: #fff;
+    padding: 80px 280px;
+    background-color: #2e2a2d85;
+    border-radius: 50px;
+}
+
+.backimg1 {
+    background-image: url(https://p4.wallpaperbetter.com/wallpaper/902/802/364/5bd376533fe5e-wallpaper-preview.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.8;
 }
